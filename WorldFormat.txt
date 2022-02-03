@@ -1,0 +1,24 @@
+KarolVersion3.0 { Size X } { Size Y } { Size Height } { Pos X 0I } { Pos Y 0I } { Faceing S0 W1 N2 E3 }
+
+{ 
+  Layers going from top to bottom, left to right
+
+  ({ Layer (
+    n nothing,
+    q block,
+
+    A red brick,
+    B yellow ",
+    C blue ",
+    D green ",
+
+  ) }
+  { Marked? (
+    o no mark,
+    K red,
+    L yellow,
+    M blue,
+    N green,
+    O black
+  ) })
+}

@@ -1,0 +1,66 @@
+{
+  Rechtsoben wird der Operator bestimmt
+
+  Eie Markierung auf...
+  Nichts = Addieren
+  Rot = Subtrahieren
+  Gelb = Multiplizieren
+
+  Die beiden Zahlen mit denen gerechnet werden soll
+  komm in die erste und zweite Zeile
+
+  Das Programm mit Schnellstart ausführen, da der Prozess
+  teils sehr lange dauern kann.
+}
+
+Methode N wiederhole solange nicht IstNorden RechtsDrehen *wiederhole *Methode Methode E wiederhole solange nicht IstOsten RechtsDrehen *wiederhole *Methode Methode S wiederhole solange nicht IstSüden
+RechtsDrehen *wiederhole *Methode Methode W wiederhole solange nicht IstWesten RechtsDrehen *wiederhole *Methode Methode toggleMark wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn *Methode Methode
+rPtr N wiederhole solange nicht IstWand Schritt *wiederhole W wiederhole solange nicht IstWand Schritt *wiederhole E *Methode Methode shiftCell E wiederhole 15 mal Schritt wenn IstMarke dann LinksDrehen
+LinksDrehen Schritt LinksDrehen LinksDrehen MarkeSetzen sonst LinksDrehen LinksDrehen Schritt LinksDrehen LinksDrehen MarkeLöschen *wenn Schritt *wiederhole MarkeLöschen *Methode Methode clearCell W wiederhole
+15 mal MarkeLöschen Schritt *wiederhole MarkeLöschen *Methode rPtr E Schritt(15) RechtsDrehen W wenn IstMarke dann rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal toggleMark Schritt *wiederhole
+toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal wenn IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(3) MarkeLöschen N Schritt(2)
+S wiederhole 15 mal wenn IstMarke dann S Schritt(1) wenn IstMarke dann S Schritt(1) wenn IstMarke dann MarkeSetzen W Schritt MarkeSetzen sonst MarkeLöschen W Schritt MarkeSetzen *wenn sonst S Schritt(1)
+wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann S Schritt(1) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen
+sonst MarkeSetzen W Schritt MarkeLöschen *wenn sonst S Schritt(1) wenn IstMarke dann MarkeSetzen W Schritt MarkeLöschen sonst MarkeLöschen W Schritt MarkeLöschen *wenn *wenn *wenn N Schritt(2) S *wiederhole
+wenn IstMarke dann S Schritt(1) wenn IstMarke dann S Schritt(1) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn sonst S Schritt(1) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn *wenn
+sonst S Schritt(1) wenn IstMarke dann S Schritt(1) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn sonst S Schritt(1) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn *wenn *wenn rPtr E
+Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal wenn IstMarke dann toggleMark Schritt *wenn
+*wiederhole toggleMark sonst Schritt wenn IstMarke dann rPtr E RechtsDrehen Schritt(1) wenn IstMarke dann rPtr E Schritt(15) RechtsDrehen Schritt(1) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark
+rPtr E Schritt(15) RechtsDrehen Schritt(1) W wiederhole 15 mal wenn IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark rPtr E Schritt(1) RechtsDrehen Schritt(4) W Hinlegen *wenn rPtr E RechtsDrehen
+Schritt(2) wenn IstMarke dann rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal wenn
+IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark rPtr E Schritt(1) RechtsDrehen Schritt(5) W Hinlegen *wenn rPtr E Schritt(15) RechtsDrehen Schritt(1) W Hinlegen rPtr E Schritt(15) RechtsDrehen
+Schritt(2) wiederhole 15 mal wenn IstMarke dann S Schritt(2) MarkeSetzen sonst S Schritt(2) MarkeLöschen *wenn W Schritt N Schritt(2) *wiederhole wenn IstMarke dann S Schritt(2) MarkeSetzen sonst S Schritt(2)
+MarkeLöschen *wenn wiederhole 14 mal rPtr E Schritt(15) RechtsDrehen Schritt(1) W wiederhole solange nicht IstZiegel Schritt *wiederhole Aufheben Schritt Hinlegen LinksDrehen LinksDrehen Schritt wenn IstMarke
+dann rPtr E Schritt(15) RechtsDrehen Schritt(3) MarkeLöschen S Schritt(1) S wiederhole 15 mal wenn IstMarke dann S Schritt(1) wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeSetzen W Schritt MarkeSetzen
+sonst MarkeLöschen W Schritt MarkeSetzen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen *wenn *wenn sonst S Schritt(1) wenn IstMarke
+dann N Schritt(2) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeSetzen W Schritt MarkeLöschen sonst MarkeLöschen
+W Schritt MarkeLöschen *wenn *wenn *wenn S Schritt(1) S *wiederhole wenn IstMarke dann S Schritt(1) wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn sonst N Schritt(2)
+wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn sonst N Schritt(2) wenn IstMarke
+dann MarkeSetzen sonst MarkeLöschen *wenn *wenn *wenn rPtr E Schritt(15) RechtsDrehen Schritt(3) wiederhole 15 mal wenn IstMarke dann S Schritt(2) MarkeSetzen sonst S Schritt(2) MarkeLöschen *wenn W Schritt
+N Schritt(2) *wiederhole wenn IstMarke dann S Schritt(2) MarkeSetzen sonst S Schritt(2) MarkeLöschen *wenn *wenn rPtr E RechtsDrehen Schritt(4) shiftCell *wiederhole rPtr E Schritt(15) RechtsDrehen Schritt(1)
+W wiederhole solange nicht IstZiegel Schritt *wiederhole Aufheben wenn IstMarke dann rPtr E Schritt(15) RechtsDrehen Schritt(3) MarkeLöschen S Schritt(1) S wiederhole 15 mal wenn IstMarke dann S Schritt(1)
+wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeSetzen W Schritt MarkeSetzen sonst MarkeLöschen W Schritt MarkeSetzen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen
+sonst MarkeSetzen W Schritt MarkeLöschen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen *wenn
+sonst N Schritt(2) wenn IstMarke dann MarkeSetzen W Schritt MarkeLöschen sonst MarkeLöschen W Schritt MarkeLöschen *wenn *wenn *wenn S Schritt(1) S *wiederhole wenn IstMarke dann S Schritt(1) wenn IstMarke
+dann N Schritt(2) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann N Schritt(2)
+wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn *wenn *wenn rPtr E Schritt(15) RechtsDrehen Schritt(3) wiederhole 15 mal
+wenn IstMarke dann S Schritt(2) MarkeSetzen sonst S Schritt(2) MarkeLöschen *wenn W Schritt N Schritt(2) *wiederhole wenn IstMarke dann S Schritt(2) MarkeSetzen sonst S Schritt(2) MarkeLöschen *wenn *wenn
+rPtr E RechtsDrehen Schritt(4) shiftCell rPtr E RechtsDrehen Schritt(1) wenn IstMarke dann rPtr E Schritt(15) RechtsDrehen Schritt(3) MarkeLöschen S Schritt(1) S wiederhole 15 mal wenn IstMarke dann S
+Schritt(1) wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeSetzen W Schritt MarkeSetzen sonst MarkeLöschen W Schritt MarkeSetzen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeLöschen W Schritt
+MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann N Schritt(2) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen
+*wenn sonst N Schritt(2) wenn IstMarke dann MarkeSetzen W Schritt MarkeLöschen sonst MarkeLöschen W Schritt MarkeLöschen *wenn *wenn *wenn S Schritt(1) S *wiederhole wenn IstMarke dann S Schritt(1) wenn
+IstMarke dann N Schritt(2) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann
+N Schritt(2) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn sonst N Schritt(2) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn *wenn *wenn *wenn rPtr E Schritt(15) RechtsDrehen Schritt(4)
+clearCell rPtr E Schritt(15) RechtsDrehen Schritt(5) clearCell rPtr E Schritt(1) RechtsDrehen Schritt(4) W wenn IstZiegel dann Aufheben rPtr E Schritt(15) RechtsDrehen Schritt(1) W wiederhole 15 mal toggleMark
+Schritt *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(1) W wiederhole 15 mal wenn IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark rPtr E Schritt(1) RechtsDrehen Schritt(5)
+W wenn nicht IstZiegel dann rPtr E Schritt(15) RechtsDrehen Schritt(3) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(3) W wiederhole 15 mal wenn
+IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark sonst Aufheben rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark rPtr E Schritt(15)
+RechtsDrehen Schritt(2) W wiederhole 15 mal wenn IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark *wenn sonst rPtr E Schritt(1) RechtsDrehen Schritt(5) W wenn IstZiegel dann Aufheben rPtr
+E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(2) W wiederhole 15 mal wenn IstMarke dann toggleMark Schritt
+*wenn *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(3) W wiederhole 15 mal toggleMark Schritt *wiederhole toggleMark rPtr E Schritt(15) RechtsDrehen Schritt(3) W wiederhole 15 mal wenn
+IstMarke dann toggleMark Schritt *wenn *wiederhole toggleMark *wenn *wenn sonst rPtr E Schritt(15) RechtsDrehen Schritt(3) MarkeLöschen N Schritt(2) S wiederhole 15 mal wenn IstMarke dann S Schritt(1)
+wenn IstMarke dann S Schritt(1) wenn IstMarke dann MarkeSetzen W Schritt MarkeSetzen sonst MarkeLöschen W Schritt MarkeSetzen *wenn sonst S Schritt(1) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen
+sonst MarkeSetzen W Schritt MarkeLöschen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann S Schritt(1) wenn IstMarke dann MarkeLöschen W Schritt MarkeSetzen sonst MarkeSetzen W Schritt MarkeLöschen *wenn
+sonst S Schritt(1) wenn IstMarke dann MarkeSetzen W Schritt MarkeLöschen sonst MarkeLöschen W Schritt MarkeLöschen *wenn *wenn *wenn N Schritt(2) S *wiederhole wenn IstMarke dann S Schritt(1) wenn IstMarke
+dann S Schritt(1) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn sonst S Schritt(1) wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn *wenn sonst S Schritt(1) wenn IstMarke dann S Schritt(1)
+wenn IstMarke dann MarkeLöschen sonst MarkeSetzen *wenn sonst S Schritt(1) wenn IstMarke dann MarkeSetzen sonst MarkeLöschen *wenn *wenn *wenn *wenn *wenn rPtr
